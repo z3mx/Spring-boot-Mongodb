@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: customer-crud-svc
+  data:
+    mongodb:
+      database: myCustom
+      host: "localhost"
+      port: 27017
+      username: 
+      password: 
+      ssl: false
+#      uri: mongodb://localhost:27017/admin?readPreference=primary&appname=MongoDB%20Compass&ssl=false
+  cloud:
+    service-registry:
+      auto-registration:
+        enabled: false
+eureka:
+  client:
+    registryFetchIntervalSeconds: 5
+    registerWithEureka: false
